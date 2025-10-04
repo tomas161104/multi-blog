@@ -4,9 +4,9 @@ services:
   db:
     image: postgres:15
     environment:
-      POSTGRES_DB: blog
-      POSTGRES_USER: tomas
-      POSTGRES_PASSWORD: 161104tom
+      POSTGRES_DB: 
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -22,11 +22,11 @@ services:
     depends_on:
       - db
     environment:
-      - DB_NAME=blog
-      - DB_USER=tomas
-      - DB_PASSWORD=161104tom
-      - DB_HOST=db
-      - DB_PORT=5432
+      - DB_NAME=
+      - DB_USER=
+      - DB_PASSWORD=
+      - DB_HOST=
+      - DB_PORT=
 
 volumes:
   postgres_data:
